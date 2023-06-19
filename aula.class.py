@@ -7,7 +7,7 @@ class Animal:
     def fazer_barulho(self):
         print('O animal fez barulho!!!!')
         
-class Cachorro(Animal):
+class Cachorro(Animal):# super classe
     def __init__(self, nome, idade):
         super().__init__(nome, idade)
         self.raca = raca
@@ -18,3 +18,7 @@ class Cachorro(Animal):
 class Gato(Animal):
     def ronronar(self):
         print('O', self.nome,'esta ronronando')
+        
+cachorro1 = Cachorro('Pitt', 4,'chalchal')
+cachorro1.fazer_barulho()
+cachorro1.abana_rabo()
